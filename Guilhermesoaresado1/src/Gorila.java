@@ -6,29 +6,18 @@ public class Gorila {
     private int idade;
     int passo; 
     int comer;
-    
-    
-    // ações e construtores!
 
-    public int andar (){
-        this.passo += 1;
-        return passo;
+    // construtores 
+
+    public Gorila (){
+        nome = "Jean Willys";
     }
 
-    public int andar (int novoPasso){
-        this.passo += novoPasso;
-        return passo;
-    }
-
-    public int alimento (){
-        this.comer += 1;
-        return comer;
-    }
-
-    public int alimento (int comer1){
-        this.comer += comer1;
-        return comer;
-    }
+    public Gorila (String nome, String cor, int idade){
+        this.nome = nome;
+        this.cor = cor;
+        this.idade = idade;
+    }  
 
     public int getPasso() {
         return passo;
@@ -64,17 +53,27 @@ public class Gorila {
         this.idade = idade;
     }
 
-    // construtores 
+    // ações e construtores!
 
-    public Gorila (){
-        nome = "Jean Willys";
+    public int andar (){
+        this.passo += 1;
+        return passo;
     }
 
-    public Gorila (String nome, String cor, int idade){
-        this.nome = nome;
-        this.cor = cor;
-        this.idade = idade;
-    }    
+    public int andar (int novoPasso){
+        this.passo += novoPasso;
+        return passo;
+    }
+
+    public int alimento (){
+        this.comer += 1;
+        return comer;
+    }
+
+    public int alimento (int comer1){
+        this.comer += comer1;
+        return comer;
+    }
 
    
 

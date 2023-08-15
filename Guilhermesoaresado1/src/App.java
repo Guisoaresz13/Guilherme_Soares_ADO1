@@ -1,13 +1,15 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args){
 
         Gorila animal1 = new Gorila();
-        animal1.setnome("Carlinhos do pão");
-        animal1.setIdade(50);
-        animal1.setCor("Pretão");
+        System.out.printf("Nome do primeiro gorila: %s \n\n" , animal1.getnome());
         
-
-        Gorila animal2 = new Gorila();
-
+        Gorila animal2 = new Gorila("Angel Romero", 
+                                     "Rosão",
+                                     18);
+                                  
+        System.out.printf("Nome do  Segundo Gorila: %s" , animal2.getnome());
+        
     }
 }
